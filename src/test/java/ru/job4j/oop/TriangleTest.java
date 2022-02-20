@@ -6,6 +6,7 @@ import static org.junit.Assert.assertThat;
 import org.junit.Test;
 
 public class TriangleTest {
+
     @Test
     public void when00and40and04Then8() {
         Point a = new Point(0, 0);
