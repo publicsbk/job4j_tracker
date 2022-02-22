@@ -6,7 +6,7 @@ public class Error {
     private int status;
     private String message;
 
-    public Error(){
+    public Error() {
     }
 
     public Error(boolean active, int status, String message) {
@@ -22,8 +22,11 @@ public class Error {
     }
 
     public static void main(String[] args) {
+        Error compErrorOne = new Error();
         Error compError = new Error(true, 666, "compile Error");
+        Error systemError = new Error(true, 777, "system error");
+        compErrorOne.printErrorInfo();
         compError.printErrorInfo();
+        systemError.printErrorInfo();
     }
-
 }
