@@ -1,4 +1,4 @@
-package ru.job4j.tracker.oop;
+package ru.job4j.oop;
 
 public class Cat {
 
@@ -29,5 +29,4 @@ public class Cat {
         black.eat("fish");
         black.show();
     }
-
 }
