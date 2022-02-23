@@ -29,4 +29,5 @@ public class Error {
         compError.printErrorInfo();
         systemError.printErrorInfo();
     }
+
 }
