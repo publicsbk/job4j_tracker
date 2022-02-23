@@ -20,5 +20,4 @@ public class Reduce {
         reduce.to(array);
         reduce.print();
     }
-
 }
