@@ -25,10 +25,4 @@ public class Book {
     public void setCount(int count) {
         this.count = count;
     }
-
-    public static void swap(Book[] arr, int x, int y) {
-        Book temp = arr[x];
-        arr[x] = arr[y];
-        arr[y] = temp;
-    }
 }

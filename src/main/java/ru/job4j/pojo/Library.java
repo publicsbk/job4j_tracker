@@ -11,14 +11,16 @@ public class Library {
         for (Book bk : books) {
             System.out.println("\"" + bk.getName() + "\"" + " - " + bk.getCount() + " pages");
         }
-        Book.swap(books, 0, 3);
+        Book temp = books[0];
+        books[0] = books[3];
+        books[3] = temp;
         System.out.println("\nReplace " + "\"" + books[0].getName() + "\""
                 + " to " + "\"" + books[3].getName() + "\"\n");
         for (Book bk : books) {
             System.out.println("\"" + bk.getName() + "\"" + " - " + bk.getCount() + " pages");
         }
         for (Book bk : books) {
-            if (bk.getName().equals("Clean code")) {
+            if ("Clean code".equals(bk.getName())) {
                 System.out.println("\n\"" + bk.getName() + "\"");
             }
         }
