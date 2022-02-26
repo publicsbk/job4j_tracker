@@ -11,5 +11,7 @@ public class StartUI {
         Item itemOne = new Item();
         DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         System.out.println(itemOne.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss")));
+        Item itemTwo = new Item("Item Two", 2);
+        System.out.println(itemTwo);
     }
 }
