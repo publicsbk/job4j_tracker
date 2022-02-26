@@ -50,8 +50,20 @@ public class Tracker {
         boolean rsl = false;
         int index = indexOf(id);
         if (index != -1) {
-           item.setId(id);
-           items[index] = item;
+            item.setId(id);
+            items[index] = item;
+            rsl = true;
+        }
+        return rsl;
+    }
+
+    public boolean delete(int id) {
+        boolean rsl = false;
+        int index = indexOf(id);
+        if (index > -1) {
+            System.arraycopy(items, indexOf(id) + 1, items, indexOf(id), size - indexOf(id) - 1);
+            items[size - 1] = null;
+            size--;
             rsl = true;
         }
         return rsl;
