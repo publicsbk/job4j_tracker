@@ -50,10 +50,34 @@ public class Tracker {
         boolean rsl = false;
         int index = indexOf(id);
         if (index != -1) {
-            Item prevId = findById(id);
-            prevId.setName(item.getName());
+           item.setId(id);
+           items[index] = item;
             rsl = true;
         }
         return rsl;
     }
+
+    public static void main(String[] args) {
+        Item item1 = new Item("Error", 1598);
+        Item item2 = new Item("Insert", 5221);
+        Item item3 = new Item("Access", 1874);
+        Item item4 = new Item("Buba", 1874);
+        Tracker tracker = new Tracker();
+        tracker.add(item1);
+        tracker.add(item2);
+        tracker.add(item3);
+        tracker.add(item4);
+        tracker.findById(2);
+        System.out.println(tracker.findAll().length);
+        for (int i = 0; i < tracker.size; i++) {
+            System.out.println(tracker.findAll()[i].getName() + tracker.findAll()[i].getId());
+        }
+        System.out.println();
+        tracker.replace(2, item4);
+        for (int i = 0; i < tracker.size; i++) {
+            System.out.println(tracker.findAll()[i].getName() + tracker.findAll()[i].getId());
+        }
+        System.out.println();
+    }
+
 }
