@@ -26,7 +26,7 @@ public class StartUITest {
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Replaced item"));
         String id = String.valueOf(item.getId());
-        String edit = "Edited name";
+        String edit = "New item name";
         String replacedName = "New item name";
         Input in = new StubInput(
                 new String[] {"0", id, edit, "1"}
