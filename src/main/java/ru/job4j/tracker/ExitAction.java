@@ -17,4 +17,5 @@ public class ExitAction implements UserAction {
     public boolean execute(Input input, Tracker tracker) {
         return false;
     }
+
 }
