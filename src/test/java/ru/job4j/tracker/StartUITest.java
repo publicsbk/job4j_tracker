@@ -151,7 +151,7 @@ public class StartUITest {
         };
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
-                "Menu." + ln
+                "Menu:" + ln
                         + "0. Exit" + ln
                         + "=== Exit Program ===" + ln
         ));
