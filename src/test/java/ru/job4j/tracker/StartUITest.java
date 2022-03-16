@@ -51,7 +51,7 @@ public class StartUITest {
                 new String[] {"0", id, "1"}
         );
         UserAction[] action = {
-                new DeleteAction(),
+                new DeleteAction(out),
                 new ExitAction(out)
         };
         new StartUI(out).init(in, tracker, action);
@@ -77,6 +77,7 @@ public class StartUITest {
                         + "0. Show all items" + ln
                         + "1. Exit" + ln
                         + "=== Show all items ===" + ln
+                        + item + ln
                         + "Menu:" + ln
                         + "0. Show all items" + ln
                         + "1. Exit" + ln
