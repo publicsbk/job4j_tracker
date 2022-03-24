@@ -10,9 +10,6 @@ public class User {
         this.valid = valid;
     }
 
-    public User() {
-    }
-
     public String getUsername() {
         return username;
     }
